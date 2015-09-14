@@ -6,8 +6,8 @@
 			
 		}
 		function index(){
-			$this->view->msg = 'This page dont exists';
-			$this->view->render('index/index');
+			$this->view->msg = 'This page dont exists    ';
+			$this->view->render('error/index');
 		}
 	}
 ?>

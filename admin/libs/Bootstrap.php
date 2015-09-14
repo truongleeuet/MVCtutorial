@@ -6,7 +6,7 @@ class Bootstrap{
 		$url = isset($_GET['url']) ? $_GET['url'] : null ;
 		$url = rtrim($url,'/');
 		$url = explode('/', $url);
-		//print_r($url);
+		print_r($url);
 		if(empty($url[0])){
 			require PATH_APPLICATION .'/controllers/Index.php';
 			$controller = new Index();
@@ -30,8 +30,12 @@ class Bootstrap{
 			}
 		}else{
 			if(isset($url[1])){
-				$controller->{$url[1]}();
-				//return false;
+				if(method_exists($controller,$url[1])){
+					$controller->{$url[1]}();
+				}else{
+					$this->error();
+				}
+					//return false;
 			}else{
 				$controller->index();
 			}

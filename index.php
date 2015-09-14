@@ -7,6 +7,7 @@ require PATH_APPLICATION . '/libs/View.php';
 
 //Libray
 require PATH_APPLICATION . '/libs/Database.php';
+require PATH_APPLICATION . '/libs/Session.php';
 require PATH_APPLICATION . '/config/paths.php';
 require PATH_APPLICATION . '/config/database.php';
 $app =  new Bootstrap();
