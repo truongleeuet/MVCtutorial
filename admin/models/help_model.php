@@ -2,6 +2,9 @@
 	 
 	 class Help_Model extends Model{
 	 	function __construct(){
-	 		echo 'Hellp Model';
+	 		echo 'Help Model';
+	 	}
+	 	function blah(){
+	 		return 10+10;
 	 	}
 	 }
