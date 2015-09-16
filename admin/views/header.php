@@ -12,6 +12,13 @@
 		});*/
 	</script>
 	<script type="text/javascript" src="<?php echo URL; ?>admin/public/js/custom.js" ></script>
+	<?php
+		if(isset($this->js)){
+			foreach($this->js as $js){
+				echo '<script type="text/javascript" src="'.URL.'admin/views/'.$js.'" ></script>';
+			}
+		}
+	?>
 	</head>
 	<body>
 	<?php Session::init(); ?>
