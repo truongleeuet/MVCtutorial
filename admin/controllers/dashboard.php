@@ -9,7 +9,10 @@
 				header('location: login');
 				exit();
 			}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67e720c5c6b539309b091d7ca5f220fcada9ca88
 			$this->view->js = array('dashboard/js/default.js');
 		}
 		function index(){
@@ -20,8 +23,17 @@
 			header('location: ../login');
 			exit();
 		}
+<<<<<<< HEAD
 		function xhrInsert(){
 			
+=======
+		
+		function xhrInsert(){
+			$this->model->xhrInsert();
+		}
+		function xhrGetListings(){
+			$this->model->xhrGetListings();
+>>>>>>> 67e720c5c6b539309b091d7ca5f220fcada9ca88
 		}
 	}
 ?>

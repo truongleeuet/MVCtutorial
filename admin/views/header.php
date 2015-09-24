@@ -12,13 +12,19 @@
 		});*/
 	</script>
 	<script type="text/javascript" src="<?php echo URL; ?>admin/public/js/custom.js" ></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67e720c5c6b539309b091d7ca5f220fcada9ca88
 	<?php
 		if(isset($this->js)){
 			foreach($this->js as $js){
 				echo '<script type="text/javascript" src="'.URL.'admin/views/'.$js.'" ></script>';
 			}
+<<<<<<< HEAD
 			//echo 1;
+=======
+>>>>>>> 67e720c5c6b539309b091d7ca5f220fcada9ca88
 		}
 	?>
 	</head>
