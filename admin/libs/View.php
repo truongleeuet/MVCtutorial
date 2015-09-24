@@ -8,8 +8,8 @@
 				require PATH_APPLICATION . '/views/' . $name .'.php';
 			}else{
 				require PATH_APPLICATION . '/views/header.php'; 
-			require PATH_APPLICATION . '/views/' . $name .'.php';
-			require PATH_APPLICATION . '/views/footer.php';
+				require PATH_APPLICATION . '/views/' . $name .'.php';
+				require PATH_APPLICATION . '/views/footer.php';
 			}
 			
 		}

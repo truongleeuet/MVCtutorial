@@ -6,7 +6,7 @@ class Bootstrap{
 		$url = isset($_GET['url']) ? $_GET['url'] : null ;
 		$url = rtrim($url,'/');
 		$url = explode('/', $url);
-		print_r($url);
+		//print_r($url);
 		if(empty($url[0])){
 			require PATH_APPLICATION .'/controllers/Index.php';
 			$controller = new Index();

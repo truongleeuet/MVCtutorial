@@ -15,6 +15,7 @@
 			//$data = $sth-> fetchAll();
 			//print_r($data);
 			$count = $sth->rowCount();
+			echo $count;
 			if($count >0 ){
 				Session::init();
 				Session::set('loggedIn',true);

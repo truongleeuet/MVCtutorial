@@ -9,6 +9,8 @@
 				header('location: login');
 				exit();
 			}
+
+			$this->view->js = array('dashboard/js/default.js');
 		}
 		function index(){
 			$this->view->render('dashboard/index');
@@ -18,6 +20,8 @@
 			header('location: ../login');
 			exit();
 		}
-	
+		function xhrInsert(){
+			
+		}
 	}
 ?>
